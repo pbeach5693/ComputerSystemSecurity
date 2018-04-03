@@ -46,14 +46,14 @@ int main()
 			if(i % 2 == 0)
 			{
 				if(int(c[i]) <= numEnd)
-		         		c[i] = (int(tolower(c[i]) - IO)) * 16;
+		         		c[i] = (int(c[i]) - IO) * 16;
 		     		else
 		          		c[i] = (int(c[i] - LCO)) * 16;
 			}
 		 	else
 		  	{
 		      		if(int(c[i]) <= numEnd)
-		         		c[i-1] += (int(tolower(c[i]) - IO));
+		         		c[i-1] += (int(c[i] - IO));
 		     		else
 		          		c[i-1] += (int(c[i] - LCO));
 		  	}
